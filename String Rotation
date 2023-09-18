@@ -1,0 +1,15 @@
+# Given a string, and a number n. Find the final string, after n rotations of the chars of the string
+# abcd, n=2
+# result is cdab
+
+def rotate(str, n):
+  n = n % len(str)
+  # after len(str) number of rotations, the string comes back to original place, len +1 = 1 rotations, len +2 = 2 rotations etc.
+
+  return str[n:] + str[:n]
+
+str = "abcd"
+n = 2
+print(rotate(str, n))
+
+  
