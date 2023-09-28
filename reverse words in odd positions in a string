@@ -1,0 +1,16 @@
+str1 = "hello how are you"
+
+lis1 = str1.split()
+
+for i in range(len(lis1)):
+    if i % 2 == 0:
+        lis1[i] = lis1[i][::-1]
+
+print(lis1)
+
+
+"""
+convert a string to list.
+then since 0th index = 1st position. 
+loop through the list. for even positions, reverse the word. (since 0th = 1st, 1th = 2nd...)
+"""
